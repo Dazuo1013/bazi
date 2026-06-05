@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命理百科 - 中华传统八字命理馆</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">中华传统八字命理馆</h1>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="bazi.html">八字排盘</a>
+                <a href="baike.html" class="active">命理百科</a>
+                <a href="message.html">留言咨询</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-title">
+                <h2>八字命理基础百科</h2>
+            </div>
+
+            <div class="baike-content">
+                <section class="baike-section">
+                    <h3>一、八字命理总述</h3>
+                    <p>八字，又称四柱八字，源自子平命理，以出生年月日时换算成四个天干地支（年柱、月柱、日柱、时柱，共八个字），依托阴阳五行生克、十神、神煞、纳音理论，分析个人性格、财运、事业、婚姻。本网站采用真太阳时校正排盘，修正地域时差带来的排盘误差，参考《千里命稿》《三命通会》传统典籍理论。</p>
+                </section>
+
+                <section class="baike-section">
+                    <h3>二、阴阳五行基础</h3>
+                    <p>五行：木、火、土、金、水；相生：木生火→火生土→土生金→金生水→水生木；相克：木克土、土克水、水克火、火克金、金克木。</p>
+                    <p>阴阳划分：单数天干/地支为阳，双数为阴，五行分阴阳是十神推演的基础规则。五行平衡代表命局平稳，过旺或偏弱是命理解析核心依据。</p>
+                </section>
+
+                <section class="baike-section">
+                    <h3>三、十天干与十二地支</h3>
+                    <div class="ganzhi-grid">
+                        <div class="ganzhi-card">
+                            <h4>十天干</h4>
+                            <p>甲(阳木)、乙(阴木)、丙(阳火)、丁(阴火)、戊(阳土)、己(阴土)、庚(阳金)、辛(阴金)、壬(阳水)、癸(阴水)</p>
+                            <p>甲木参天、乙木花草；丙火太阳、丁火灯火；戊土城墙、己土田园；庚金刀剑、辛金首饰；壬江癸露。</p>
+                        </div>
+                        <div class="ganzhi-card">
+                            <h4>十二地支</h4>
+                            <p>子(阳水)丑(阴土)寅(阳木)卯(阴木)辰(阳土)巳(阴火)<br>午(阳火)未(阴土)申(阳金)酉(阴金)戌(阳土)亥(阴水)</p>
+                            <p>地支藏天干（人元），是藏干、支神解析的依据。</p>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="images/ganzhi.jpg" alt="十天干十二地支对照表">
+                    </div>
+                </section>
+
+                <section class="baike-section">
+                    <h3>四、十神详解</h3>
+                    <p>生我为印（正印、偏印）、我生为食伤（食神、伤官）、克我为官（正官、七杀）、我克为财（正财、偏财）、同我为比劫（比肩、劫财）；阴阳分正偏，异性为正、同性为偏。</p>
+                    <ul class="shishen-list">
+                        <li><strong>食神</strong>：我生同性五行，福寿之星，心性温和、口才佳、擅长才艺，衣食无忧；食神旺适合餐饮、艺术、教育培训行业。</li>
+                        <li><strong>伤官</strong>：我生异性五行，创意之星，思维天马行空、聪慧傲气，擅长创新、技术、设计；伤官无制易桀骜、顶撞权威。</li>
+                        <li><strong>比肩劫财</strong>：比肩重情义、独立自主；劫财豪爽花钱大手，易被亲友分财。</li>
+                        <li><strong>正偏财</strong>：正财固定薪资、原配；偏财副业横财、大方善交际。</li>
+                        <li><strong>官杀</strong>：正官规矩公职；七杀魄力勇武，无制暴躁。</li>
+                        <li><strong>印星</strong>：正印贵人学业；偏印玄学灵感，孤僻小众技艺。</li>
+                    </ul>
+                </section>
+
+                <section class="baike-section">
+                    <h3>五、常用神煞详解（点击查看释义）</h3>
+                    <div class="shensha-grid">
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('天乙贵人', '神煞')">天乙贵人</h4>
+                            <p>八字第一吉神，主逢凶化吉、贵人相助</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('文昌贵人', '神煞')">文昌贵人</h4>
+                            <p>主学业聪慧、文笔出众，利考试升学</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('桃花', '神煞')">桃花</h4>
+                            <p>主人缘、异性缘，分墙内桃花和墙外桃花</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('驿马', '神煞')">驿马</h4>
+                            <p>主走动、变动，利外出发展、出差旅行</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('华盖', '神煞')">华盖</h4>
+                            <p>主艺术天赋、玄学悟性，性格孤傲</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('羊刃', '神煞')">羊刃</h4>
+                            <p>主刚强、果断，身旺易招灾，身弱帮身</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('空亡', '神煞')">空亡</h4>
+                            <p>主虚无、落空，吉落空不吉，凶落空不凶</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('将星', '神煞')">将星</h4>
+                            <p>主领导才能、权威，适合管理岗位</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('金舆', '神煞')">金舆</h4>
+                            <p>主车马来往、出行便利，易得贵人接送</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('劫煞', '神煞')">劫煞</h4>
+                            <p>主竞争、破财，易有意外损失</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('灾煞', '神煞')">灾煞</h4>
+                            <p>主灾祸、伤病，需注意安全健康</p>
+                        </div>
+                        <div class="shensha-card">
+                            <h4 class="clickable" onclick="showExplain('孤辰寡宿', '神煞')">孤辰寡宿</h4>
+                            <p>主孤独、晚婚，性格内向不合群</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- 释义弹窗 -->
+    <div id="explainModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <div id="modalText"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>©2026 命理研究院</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

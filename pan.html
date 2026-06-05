@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八字排盘结果</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .pan-wrap{background:#fff8ef;padding:30px;border-radius:10px;max-width:720px;margin:0 auto;}
+        .info-bar{padding:12px;background:#e9ddcf;border-radius:6px;margin-bottom:15px;}
+        .b-table{width:100%;border-collapse:collapse;margin:15px 0;}
+        .b-table td{border:1px #c8b49c;padding:10px;text-align:center;}
+        .b-table .head{background:#b87346;color:#fff;font-weight:bold;}
+        .explain-area{padding:15px;background:#fff;border:1px #ddd;border-radius:6px;line-height:1.8;}
+        .click-text{color:#922222;cursor:pointer;text-decoration:underline;}
+        .click-text:hover{color:#c53030;}
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>八字排盘详情</h1>
+        <nav class="nav">
+            <a href="index.html">首页</a>
+            <a href="bazi.html">重新测算</a>
+            <a href="baike.html">命理百科</a>
+            <a href="message.html">留言咨询</a>
+        </nav>
+    </div>
+</header>
+<main class="main container">
+    <div class="pan-wrap">
+        <div class="info-bar" id="userInfo"></div>
+        <div class="bazi-table"></div>
+        <div class="explain-area" id="jieText"></div>
+        <div style="margin-top:20px;text-align:center;">
+            <button id="openRecBtn" class="calc-btn record-btn">查看历史记录</button>
+        </div>
+    </div>
+    <!--释义弹窗 -->
+    <div id="explainModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h4 id="modalTitle"></h4>
+            <div id="modalText"></div>
+        </div>
+    </div>
+    <!--记录弹窗 -->
+    <div id="recordModal" class="modal">
+        <div class="modal-content record-modal">
+            <span class="close-record">&times;</span>
+            <h4>历史排盘</h4>
+            <div id="recordList"></div>
+            <button id="clearRec" class="calc-btn">清空记录</button>
+        </div>
+    </div>
+</main>
+<footer class="footer">©2026 命理研究院</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

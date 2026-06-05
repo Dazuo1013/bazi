@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八字排盘结果</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>中华传统八字命理馆</h1>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="bazi.html">返回排盘录入</a>
+                <a href="baike.html">命理百科</a>
+                <a href="message.html">留言咨询</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main container">
+        <div id="resultBox" class="result-box">
+            <h3>【生辰八字命盘｜真太阳时排盘结果】</h3
+            <div class="info-tip"></div>
+            <div class="bazi-table"></div>
+            <div class="analyse-text"></div>
+        </div>
+        <!--释义弹窗 -->
+        <div id="explainModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h4 id="modalTitle">名词解释</h4>
+                <div id="modalText"></div>
+            </div>
+        </div>
+        <!--记录弹窗 -->
+        <div id="recordModal" class="modal">
+            <div class="modal-content record-modal">
+                <span class="close-record">&times;</span>
+                <h4>历史排盘记录</h4>
+                <div id="recordList"></div>
+                <button id="clearRecord" class="calc-btn">清空全部记录</button>
+            </div>
+        </div>
+        <div style="margin-top:20px;text-align:center">
+            <button id="openRecordBtn" class="calc-btn record-btn">查看全部排盘记录</button>
+        </div>
+    </main>
+    <footer class="footer">©2026 命理研究院</footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

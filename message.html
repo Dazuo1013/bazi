@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言咨询 - 中华传统八字命理馆</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">中华传统八字命理馆</h1>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="bazi.html">八字排盘</a>
+                <a href="baike.html">命理百科</a>
+                <a href="message.html" class="active">留言咨询</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-title">
+                <h2>留言咨询</h2>
+            </div>
+
+            <div class="content-grid">
+                <!-- 留言表单（支持匿名） -->
+                <div class="form-wrap">
+                    <h3>发表留言</h3>
+                    <form id="msgForm">
+                        <div class="form-group">
+                            <label>昵称：</label>
+                            <input type="text" id="nick" placeholder="请输入您的昵称（匿名可不填）">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="anonymous"> 匿名发表
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>留言内容：</label>
+                            <textarea id="msg" rows="5" placeholder="请输入您的留言" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">提交留言</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 留言列表 -->
+                <div class="msg-list-wrap">
+                    <h3>最新留言</h3>
+                    <div id="msgList" class="msg-list">
+                        <div class="msg-item">
+                            <div class="msg-header">
+                                <strong>张三</strong>
+                                <span class="msg-time">2025-06-05 10:30</span>
+                            </div>
+                            <div class="msg-content">排盘很准确，解释也很清楚，谢谢！</div>
+                        </div>
+                        <div class="msg-item">
+                            <div class="msg-header">
+                                <strong>李四</strong>
+                                <span class="msg-time">2025-06-04 15:20</span>
+                            </div>
+                            <div class="msg-content">百科内容很详细，学到了很多命理知识。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>©2026 命理研究院</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

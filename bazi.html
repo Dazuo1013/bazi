@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八字排盘 - 中华传统八字命理馆</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">中华传统八字命理馆</h1>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="bazi.html" class="active">八字排盘</a>
+                <a href="baike.html">命理百科</a>
+                <a href="message.html">留言咨询</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="page-title">
+                <h2>八字排盘（真太阳时校正）</h2>
+            </div>
+
+            <div class="content-grid">
+                <!-- 输入表单 -->
+                <div class="form-wrap">
+                    <form id="baziForm">
+                        <div class="form-group">
+                            <label>历法选择：</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="dateType" value="solar" checked> 公历</label>
+                                <label><input type="radio" name="dateType" value="lunar"> 农历</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>出生年月日：</label>
+                            <input type="text" id="birthYmd" placeholder="格式：2000-5-3 或 2000/5/3" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>出生时间：</label>
+                            <input type="text" id="birthHour" placeholder="格式：5:00 或 13:05" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>出生城市：</label>
+                            <input type="text" id="city" placeholder="如：北京、上海" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>性别：</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="sex" value="男" checked> 男</label>
+                                <label><input type="radio" name="sex" value="女"> 女</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">立即排盘</button>
+                            <button type="button" id="showRecordBtn" class="btn btn-secondary">查看历史记录</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 排盘结果 -->
+                <div class="result-wrap">
+                    <div id="resultArea" class="result-area" style="display: none;">
+                        <h3>传统模式</h3>
+                        <div id="infoTip" class="base-info"></div>
+                        <table class="bazi-table">
+                            <tbody id="baziBody"></tbody>
+                        </table>
+                        <div id="analyseText" class="analyse-text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 历史记录区 -->
+            <section class="record-area">
+                <h3>历史排盘记录</h3>
+                <div id="recordList" class="record-list">
+                    <div class="empty-tip">暂无排盘记录</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 释义弹窗 -->
+    <div id="explainModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <div id="modalText" style="white-space: pre-line; line-height: 1.8;"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>©2026 命理研究院</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
